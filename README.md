@@ -2,9 +2,10 @@ BorderGuru	Nodejs
 ===================
 
 This is the **BorderGuru	Nodejs Coding Challenge** task.
-##Installation:
 
-#### Run it using Docker `docker-compose up` OR run it locally by using following commands:
+## Installation:
+
+###### Run it using Docker `docker-compose up` OR run it locally by using following commands:
 
 > - npm install
 > - npm run build
@@ -20,7 +21,7 @@ This is the **BorderGuru	Nodejs Coding Challenge** task.
 
 ----------
 
-##Routes:
+## Routes:
 
 > - GET /orders
 > - POST /orders
@@ -32,5 +33,5 @@ This is the **BorderGuru	Nodejs Coding Challenge** task.
 
 ----------
 
-##Testing:
-#### Run the test-case for api by running:  `npm run test` 
+## Testing:
+###### Run the test-case for api by running:  `npm run test` 
