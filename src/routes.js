@@ -26,6 +26,14 @@ routes.put('/:orderID', (req, res, next) => {
   })
 })
 
+routes.delete('/:orderID', (req, res, next) => {
+  const {orderID} = req.params
+  OrderModel.findOneAndRemove({orderID}, {_id: 0, __v: 0}, (err, r) => {
+    if (err) return next(err)
+    res.json({data: r})
+  })
+})
+
 routes.get('/search/company/:q', (req, res, next) => {
   const companyName = req.params.q
   OrderModel.find({companyName}, {_id: 0, __v: 0}, (err, orders) => {
